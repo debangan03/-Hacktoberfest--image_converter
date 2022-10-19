@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Convert it</title>
+  <link rel="icon" type="image/x-icon" href="./lg.png" style="stroke:round">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="text.css">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Image and text -->
+  <nav class="navbar navbar-light bg-dark">
+    <a class="navbar-brand" href=""style="color: white;">
+      <img src="lg.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      <b>Convert it</b>
+    </a>
+  </nav>
+  <div class="container">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h3 class="animate-charcter"> CONVERT IMAGE NOW</h3>
+          
+        </div>
+      </div>
+    </div>
+    <style>
+      body {
+        background-image: url("pexels-bri-schneiter-346529.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* width: 200px; */
+        height: auto;
+
+      }
+
+      h1 {
+        color: rgb(97, 137, 148);
+      }
+
+      p {
+        color: rgb(255, 136, 0);
+      }
+    </style>
+
+    <form id="myForm" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="fileurl" style="color: rgb(255, 255, 255);"><b>Image URL:</b></label>
+        <input type="text" id="url" placeholder="URL" class="form-control" style="background-color: rgb(255, 255, 255);">
+      </div>
+      <script src="script.js"></script>
+      <div class="form-group">
+        <label for="image" style="color: white;"><b>Select Image:</b></label>
+        <input type="file" id="image" class="form-control" style="background-color:rgb(255, 255, 255);">
+        <img style="display: none;" id="selectedImage" />
+      </div>
+      <div class="form-group">
+        <label for="format" style="color: white;"><b>Select Format:</b></label>
+        <select class="form-control" id="format" style="background-color:  rgb(255, 255, 255);">
+          <option>JPEG</option>
+          <option>PNG</option>
+          <option>GIF</option>
+          <option>JPG</option>
+
+        </select>
+      </div>
+      <div class="form-group">
+        <button class="btn btn-dark btn-block" >
+          Convert Image
+        </button>
+      </div>
+    </form>
+  </div>
+  <style>
+
+  </style>
+  <div class="footer-basic">
+    <footer>
+      <div class="social"><a href="https://www.instagram.com/debangan21/"><i class="icon ion-social-instagram"></i></a><a href="#"><i
+            class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a
+          href="#"><i class="icon ion-social-facebook"></i></a></div>
+      <ul class="list-inline">
+        <li class="list-inline-item" style><a href="#">Home</a></li>
+        <li class="list-inline-item"><a href="#">Services</a></li>
+        <li class="list-inline-item"><a href="./abus.html">About</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+      </ul>
+      <p class="copyright">Convert it © 2022</p>
+    </footer>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/browser-image-converter@0.1.1/dist/index.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="script.js"></script>
+
+</html>
